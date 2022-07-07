@@ -42,7 +42,7 @@ public class Entrada {
             }
             sc.nextLine();
 
-        } while (continuar == false);//
+        } while (!continuar);//
         return input;
 
 
@@ -64,7 +64,7 @@ public class Entrada {
 
             }
             sc.nextLine();// para limpiar el buffer,lee nro entrada.nextInt pero no el enter.
-        } while (continuar == false);
+        } while (!continuar);
         return input;
     }
 
@@ -81,7 +81,7 @@ public class Entrada {
 
             }
             sc.nextLine();
-        } while (continuar == false);
+        } while (!continuar);
         return input;
     }
 
@@ -98,7 +98,7 @@ public class Entrada {
 
             }
             sc.nextLine();
-        } while (continuar == false);
+        } while (!continuar);
         return input;
     }
 
@@ -119,7 +119,7 @@ public class Entrada {
                 System.out.println("Error de formato. Introduzca un valor correcto");
 
             }
-        } while (continuar == false);
+        } while (!continuar);
         return mensajeUser;
     }
 
@@ -143,12 +143,12 @@ public class Entrada {
                 System.out.println(e.getMessage());
 
             }
-        } while (continuar == false);
+        } while (!continuar);
         return userMessage.charAt(0);
     }
 
     public static boolean readSiNo(String message) {
-        String userMessage = "";
+        String userMessage ="";
         boolean continuar = false;
         boolean result = false;
 
@@ -169,7 +169,7 @@ public class Entrada {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-        } while (continuar == false);
+        } while (!continuar);
 return result;
     }
 }
